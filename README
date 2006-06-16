@@ -1,0 +1,205 @@
+meld
+-------------------------------------------
+GNOME tool for analyzing two- and three-way diffs
+between files or directories, as well as CVS and SVN.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  diffutils-2.8.7-1
+  gnome-python2-2.10.0-1
+  pygtk2-2.6.3-1
+  pygtksourceview-2.10.2-1
+  pyorbit-2.0.1-2
+  python-2.4.1-1
+  cvs-1.11.17-1 *
+  subversion-1.2.3-1 *
+
+Build requirements:
+  cygwin-1.5.19-4
+  make-3.80-1
+  python-2.4.1-1
+  intltool-0.33-1
+  scrollkeeper-0.3.14-2
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://meld.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/meld/
+
+-------------------------------------------
+
+Build instructions:
+  unpack meld-1.1.3-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./meld-1.1.3-1.sh all
+
+This will create:
+  /usr/src/meld-1.1.3-1-src.tar.bz2
+  /usr/src/meld-1.1.3-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/meld.sh
+  /usr/bin/meld
+  /usr/lib/meld/diffutil.py
+  /usr/lib/meld/diffutil.pyc
+  /usr/lib/meld/diffutil.pyo
+  /usr/lib/meld/dirdiff.py
+  /usr/lib/meld/dirdiff.pyc
+  /usr/lib/meld/dirdiff.pyo
+  /usr/lib/meld/filediff.py
+  /usr/lib/meld/filediff.pyc
+  /usr/lib/meld/filediff.pyo
+  /usr/lib/meld/gnomeglade.py
+  /usr/lib/meld/gnomeglade.pyc
+  /usr/lib/meld/gnomeglade.pyo
+  /usr/lib/meld/meldapp.py
+  /usr/lib/meld/meldapp.pyc
+  /usr/lib/meld/meldapp.pyo
+  /usr/lib/meld/melddoc.py
+  /usr/lib/meld/melddoc.pyc
+  /usr/lib/meld/melddoc.pyo
+  /usr/lib/meld/misc.py
+  /usr/lib/meld/misc.pyc
+  /usr/lib/meld/misc.pyo
+  /usr/lib/meld/paths.py
+  /usr/lib/meld/paths.pyc
+  /usr/lib/meld/paths.pyo
+  /usr/lib/meld/prefs.py
+  /usr/lib/meld/prefs.pyc
+  /usr/lib/meld/prefs.pyo
+  /usr/lib/meld/task.py
+  /usr/lib/meld/task.pyc
+  /usr/lib/meld/task.pyo
+  /usr/lib/meld/tree.py
+  /usr/lib/meld/tree.pyc
+  /usr/lib/meld/tree.pyo
+  /usr/lib/meld/undo.py
+  /usr/lib/meld/undo.pyc
+  /usr/lib/meld/undo.pyo
+  /usr/lib/meld/vc/bzr.py
+  /usr/lib/meld/vc/bzr.pyc
+  /usr/lib/meld/vc/bzr.pyo
+  /usr/lib/meld/vc/cvs.py
+  /usr/lib/meld/vc/cvs.pyc
+  /usr/lib/meld/vc/cvs.pyo
+  /usr/lib/meld/vc/darcs.py
+  /usr/lib/meld/vc/darcs.pyc
+  /usr/lib/meld/vc/darcs.pyo
+  /usr/lib/meld/vc/mercurial.py
+  /usr/lib/meld/vc/mercurial.pyc
+  /usr/lib/meld/vc/mercurial.pyo
+  /usr/lib/meld/vc/monotone.py
+  /usr/lib/meld/vc/monotone.pyc
+  /usr/lib/meld/vc/monotone.pyo
+  /usr/lib/meld/vc/svn.py
+  /usr/lib/meld/vc/svn.pyc
+  /usr/lib/meld/vc/svn.pyo
+  /usr/lib/meld/vc/tla.py
+  /usr/lib/meld/vc/tla.pyc
+  /usr/lib/meld/vc/tla.pyo
+  /usr/lib/meld/vc/_null.py
+  /usr/lib/meld/vc/_null.pyc
+  /usr/lib/meld/vc/_null.pyo
+  /usr/lib/meld/vc/_vc.py
+  /usr/lib/meld/vc/_vc.pyc
+  /usr/lib/meld/vc/_vc.pyo
+  /usr/lib/meld/vc/__init__.py
+  /usr/lib/meld/vc/__init__.pyc
+  /usr/lib/meld/vc/__init__.pyo
+  /usr/lib/meld/vcview.py
+  /usr/lib/meld/vcview.pyc
+  /usr/lib/meld/vcview.pyo
+  /usr/share/application-registry/meld.applications
+  /usr/share/applications/meld.desktop
+  /usr/share/doc/Cygwin/meld-1.1.3.README
+  /usr/share/doc/meld-1.1.3/AUTHORS
+  /usr/share/doc/meld-1.1.3/ChangeLog
+  /usr/share/doc/meld-1.1.3/COPYING
+  /usr/share/doc/meld-1.1.3/INSTALL
+  /usr/share/gnome/help/meld/C/figures/dirdiff.png
+  /usr/share/gnome/help/meld/C/figures/filediff.png
+  /usr/share/gnome/help/meld/C/meld.xml
+  /usr/share/locale/bg/LC_MESSAGES/meld.mo
+  /usr/share/locale/ca/LC_MESSAGES/meld.mo
+  /usr/share/locale/cs/LC_MESSAGES/meld.mo
+  /usr/share/locale/de/LC_MESSAGES/meld.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/meld.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/meld.mo
+  /usr/share/locale/es/LC_MESSAGES/meld.mo
+  /usr/share/locale/fi/LC_MESSAGES/meld.mo
+  /usr/share/locale/fr/LC_MESSAGES/meld.mo
+  /usr/share/locale/hu/LC_MESSAGES/meld.mo
+  /usr/share/locale/it/LC_MESSAGES/meld.mo
+  /usr/share/locale/ja/LC_MESSAGES/meld.mo
+  /usr/share/locale/ko/LC_MESSAGES/meld.mo
+  /usr/share/locale/ne/LC_MESSAGES/meld.mo
+  /usr/share/locale/nl/LC_MESSAGES/meld.mo
+  /usr/share/locale/pa/LC_MESSAGES/meld.mo
+  /usr/share/locale/pt/LC_MESSAGES/meld.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/meld.mo
+  /usr/share/locale/ru/LC_MESSAGES/meld.mo
+  /usr/share/locale/rw/LC_MESSAGES/meld.mo
+  /usr/share/locale/sr/LC_MESSAGES/meld.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/meld.mo
+  /usr/share/locale/sv/LC_MESSAGES/meld.mo
+  /usr/share/locale/vi/LC_MESSAGES/meld.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/meld.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/meld.mo
+  /usr/share/meld/glade2/dirdiff.glade
+  /usr/share/meld/glade2/filediff.glade
+  /usr/share/meld/glade2/meldapp.glade
+  /usr/share/meld/glade2/pixmaps/button_apply0.xpm
+  /usr/share/meld/glade2/pixmaps/button_apply1.xpm
+  /usr/share/meld/glade2/pixmaps/button_copy0.xpm
+  /usr/share/meld/glade2/pixmaps/button_copy1.xpm
+  /usr/share/meld/glade2/pixmaps/button_delete.xpm
+  /usr/share/meld/glade2/pixmaps/close.xpm
+  /usr/share/meld/glade2/pixmaps/cvs-icon-small.png
+  /usr/share/meld/glade2/pixmaps/cvs-icon.png
+  /usr/share/meld/glade2/pixmaps/filter-ignored-24.png
+  /usr/share/meld/glade2/pixmaps/filter-modified-24.png
+  /usr/share/meld/glade2/pixmaps/filter-nonvc-24.png
+  /usr/share/meld/glade2/pixmaps/filter-normal-24.png
+  /usr/share/meld/glade2/pixmaps/icon.png
+  /usr/share/meld/glade2/pixmaps/svn-icon-small.png
+  /usr/share/meld/glade2/pixmaps/svn-icon.png
+  /usr/share/meld/glade2/pixmaps/tree-file-changed.png
+  /usr/share/meld/glade2/pixmaps/tree-file-new.png
+  /usr/share/meld/glade2/pixmaps/tree-file-newer.png
+  /usr/share/meld/glade2/pixmaps/tree-file-normal.png
+  /usr/share/meld/glade2/pixmaps/tree-folder-changed.png
+  /usr/share/meld/glade2/pixmaps/tree-folder-new.png
+  /usr/share/meld/glade2/pixmaps/tree-folder-normal.png
+  /usr/share/meld/glade2/pixmaps/vc-add-24.png
+  /usr/share/meld/glade2/pixmaps/vc-checkout-24.png
+  /usr/share/meld/glade2/pixmaps/vc-commit-24.png
+  /usr/share/meld/glade2/pixmaps/vc-icon.png
+  /usr/share/meld/glade2/pixmaps/vc-remove-24.png
+  /usr/share/meld/glade2/pixmaps/vc-update-24.png
+  /usr/share/meld/glade2/vcview.glade
+  /usr/share/omf/meld/meld-C.omf
+  /usr/share/pixmaps/meld.png
+
+------------------
+
+Port Notes:
+
+----- version 1.1.3-1 -----
+Version bump.
+
+----- version 1.1.1-1 -----
+Version bump.
+
+----- version 0.9.4.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
