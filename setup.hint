@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: cygwin diffutils gnome-python2 pygtk2 pygtksourceview python
+requires: cygwin diffutils pygconf2 pygnome2 pygnomevfs2 pygtk2 pygtksourceview python
 sdesc: "GNOME diff tool for files, directories, CVS, and SVN"
 ldesc: "GNOME tool for analyzing two- and three-way diffs
 between files or directories, as well as CVS and SVN."
