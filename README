@@ -7,28 +7,29 @@ Runtime requirements:
   cygwin-1.5.24-2
   cvs  (optional)
   diffutils
-  pygconf2-2.16.2-1
-  pygnome2-2.16.2-1
-  pygnomevfs2-2.16.2-1
-  pygtk2-2.10.3-1
-  pygtksourceview-2.16.0-1
-  pyorbit-2.14.1-2
-  python-2.4.3-1
+  python-2.5.1-1
+  python-gconf2-2.18.2-1
+  python-gnome2-2.18.2-1
+  python-gnomevfs2-2.18.2-1
+  python-gtk2-2.10.4-2
+  python-gtksourceview-2.18.0-1
+  python-orbit-2.14.2-2
   subversion  (optional)
 
 Build requirements:
   cygwin-1.5.24-2
   cygport-0.2.11-1
-  intltool-0.35.4-1
+  intltool-0.35.5-1
   make-3.81-1
-  python-2.4.3-1
+  python-2.5.1-1
   scrollkeeper-0.3.14-2
-  sed-4.1.4-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://meld.sourceforge.net/
 
 Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/meld/
   http://downloads.sourceforge.net/meld/
 
 -------------------------------------------
@@ -194,6 +195,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.1.4-2 -----
+Rebuilt for python-2.5.
 
 ----- version 1.1.4-1 -----
 Version bump.
