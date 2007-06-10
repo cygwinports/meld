@@ -35,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack meld-1.1.4-X-src.tar.bz2
+  unpack meld-1.1.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./meld-1.1.4-X.cygport all
+  cygport ./meld-1.1.5-X.cygport all
 
 This will create:
-  /usr/src/meld-1.1.4-X-src.tar.bz2
-  /usr/src/meld-1.1.4-X.tar.bz2
+  /usr/src/meld-1.1.5-X-src.tar.bz2
+  /usr/src/meld-1.1.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -123,18 +123,23 @@ Files included in the binary package:
   /usr/lib/meld/vcview.pyo
   /usr/share/application-registry/meld.applications
   /usr/share/applications/meld.desktop
-  /usr/share/doc/Cygwin/meld-1.1.4.README
-  /usr/share/doc/meld-1.1.4/AUTHORS
-  /usr/share/doc/meld-1.1.4/COPYING
-  /usr/share/doc/meld-1.1.4/ChangeLog
-  /usr/share/doc/meld-1.1.4/INSTALL
+  /usr/share/doc/Cygwin/meld-1.1.5.README
+  /usr/share/doc/meld-1.1.5/AUTHORS
+  /usr/share/doc/meld-1.1.5/COPYING
+  /usr/share/doc/meld-1.1.5/ChangeLog
+  /usr/share/doc/meld-1.1.5/INSTALL
   /usr/share/gnome/help/meld/C/figures/dirdiff.png
   /usr/share/gnome/help/meld/C/figures/filediff.png
   /usr/share/gnome/help/meld/C/meld.xml
+  /usr/share/gnome/help/meld/es/figures/dirdiff.png
+  /usr/share/gnome/help/meld/es/figures/filediff.png
+  /usr/share/gnome/help/meld/es/meld.xml
+  /usr/share/locale/ar/LC_MESSAGES/meld.mo
   /usr/share/locale/bg/LC_MESSAGES/meld.mo
   /usr/share/locale/ca/LC_MESSAGES/meld.mo
   /usr/share/locale/cs/LC_MESSAGES/meld.mo
   /usr/share/locale/de/LC_MESSAGES/meld.mo
+  /usr/share/locale/dz/LC_MESSAGES/meld.mo
   /usr/share/locale/en_CA/LC_MESSAGES/meld.mo
   /usr/share/locale/en_GB/LC_MESSAGES/meld.mo
   /usr/share/locale/es/LC_MESSAGES/meld.mo
@@ -190,11 +195,15 @@ Files included in the binary package:
   /usr/share/meld/glade2/pixmaps/vc-update-24.png
   /usr/share/meld/glade2/vcview.glade
   /usr/share/omf/meld/meld-C.omf
+  /usr/share/omf/meld/meld-es.omf
   /usr/share/pixmaps/meld.png
 
 ------------------
 
 Port Notes:
+
+----- version 1.1.5-1 -----
+Version bump.
 
 ----- version 1.1.4-2 -----
 Rebuilt for python-2.5.
