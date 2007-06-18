@@ -35,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack meld-1.1.5-X-src.tar.bz2
+  unpack meld-1.1.5.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./meld-1.1.5-X.cygport all
+  cygport ./meld-1.1.5.1-X.cygport all
 
 This will create:
-  /usr/src/meld-1.1.5-X-src.tar.bz2
-  /usr/src/meld-1.1.5-X.tar.bz2
+  /usr/src/meld-1.1.5.1-X-src.tar.bz2
+  /usr/src/meld-1.1.5.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -123,11 +123,11 @@ Files included in the binary package:
   /usr/lib/meld/vcview.pyo
   /usr/share/application-registry/meld.applications
   /usr/share/applications/meld.desktop
-  /usr/share/doc/Cygwin/meld-1.1.5.README
-  /usr/share/doc/meld-1.1.5/AUTHORS
-  /usr/share/doc/meld-1.1.5/COPYING
-  /usr/share/doc/meld-1.1.5/ChangeLog
-  /usr/share/doc/meld-1.1.5/INSTALL
+  /usr/share/doc/Cygwin/meld-1.1.5.1.README
+  /usr/share/doc/meld-1.1.5.1/AUTHORS
+  /usr/share/doc/meld-1.1.5.1/COPYING
+  /usr/share/doc/meld-1.1.5.1/ChangeLog
+  /usr/share/doc/meld-1.1.5.1/INSTALL
   /usr/share/gnome/help/meld/C/figures/dirdiff.png
   /usr/share/gnome/help/meld/C/figures/filediff.png
   /usr/share/gnome/help/meld/C/meld.xml
@@ -202,7 +202,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.1.5-1 -----
+----- version 1.1.5.1-1 -----
 Version bump.
 
 ----- version 1.1.4-2 -----
