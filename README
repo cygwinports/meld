@@ -4,25 +4,24 @@ GNOME tool for analyzing two- and three-way diffs
 between files or directories, as well as CVS and SVN.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  cvs  (optional)
   diffutils
-  python-2.5.1-1
-  python-gconf2-2.18.2-1
-  python-gnome2-2.18.2-1
-  python-gnomevfs2-2.18.2-1
-  python-gtk2-2.10.4-2
-  python-gtksourceview-2.18.0-1
-  python-orbit-2.14.2-2
+  python-2.5.2-1
+  python-gconf2-2.22.0-1
+  python-gnome2-2.22.0-1
+  python-gnomevfs2-2.22.0-1
+  python-gobject2-2.14.2-1
+  python-gtk2-2.12.1-1
+  python-gtksourceview-2.22.0-1
+  cvs  (optional)
+  git  (optional)
   subversion  (optional)
 
 Build requirements:
-  cygwin-1.5.24-2
-  cygport-0.2.11-1
-  intltool-0.35.5-1
+  cygport-0.3.11-1
+  intltool-0.37.1-1
   make-3.81-1
-  python-2.5.1-1
-  scrollkeeper-0.3.14-2
+  python-2.5.2-1
+  rarian-0.8.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -35,22 +34,20 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack meld-1.1.5.1-X-src.tar.bz2
+  unpack meld-1.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./meld-1.1.5.1-X.cygport all
+  cygport ./meld-1.2-X.cygport all
 
 This will create:
-  /usr/src/meld-1.1.5.1-X-src.tar.bz2
-  /usr/src/meld-1.1.5.1-X.tar.bz2
+  /usr/src/meld-1.2-X-src.tar.bz2
+  /usr/src/meld-1.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /etc/postinstall/meld.sh
-  /etc/preremove/meld.sh
   /usr/bin/meld
   /usr/lib/meld/diffutil.py
   /usr/lib/meld/diffutil.pyc
@@ -106,6 +103,9 @@ Files included in the binary package:
   /usr/lib/meld/vc/darcs.py
   /usr/lib/meld/vc/darcs.pyc
   /usr/lib/meld/vc/darcs.pyo
+  /usr/lib/meld/vc/git.py
+  /usr/lib/meld/vc/git.pyc
+  /usr/lib/meld/vc/git.pyo
   /usr/lib/meld/vc/mercurial.py
   /usr/lib/meld/vc/mercurial.pyc
   /usr/lib/meld/vc/mercurial.pyo
@@ -123,23 +123,25 @@ Files included in the binary package:
   /usr/lib/meld/vcview.pyo
   /usr/share/application-registry/meld.applications
   /usr/share/applications/meld.desktop
-  /usr/share/doc/Cygwin/meld-1.1.5.1.README
-  /usr/share/doc/meld-1.1.5.1/AUTHORS
-  /usr/share/doc/meld-1.1.5.1/COPYING
-  /usr/share/doc/meld-1.1.5.1/ChangeLog
-  /usr/share/doc/meld-1.1.5.1/INSTALL
+  /usr/share/doc/meld-1.2/AUTHORS
+  /usr/share/doc/meld-1.2/COPYING
+  /usr/share/doc/meld-1.2/ChangeLog
+  /usr/share/doc/meld-1.2/INSTALL
+  /usr/share/doc/meld-1.2/MAINTAINERS
   /usr/share/gnome/help/meld/C/figures/dirdiff.png
   /usr/share/gnome/help/meld/C/figures/filediff.png
   /usr/share/gnome/help/meld/C/meld.xml
   /usr/share/gnome/help/meld/es/figures/dirdiff.png
   /usr/share/gnome/help/meld/es/figures/filediff.png
   /usr/share/gnome/help/meld/es/meld.xml
+  /usr/share/gnome/help/meld/fr/meld.xml
   /usr/share/locale/ar/LC_MESSAGES/meld.mo
   /usr/share/locale/bg/LC_MESSAGES/meld.mo
   /usr/share/locale/ca/LC_MESSAGES/meld.mo
   /usr/share/locale/cs/LC_MESSAGES/meld.mo
   /usr/share/locale/de/LC_MESSAGES/meld.mo
   /usr/share/locale/dz/LC_MESSAGES/meld.mo
+  /usr/share/locale/el/LC_MESSAGES/meld.mo
   /usr/share/locale/en_CA/LC_MESSAGES/meld.mo
   /usr/share/locale/en_GB/LC_MESSAGES/meld.mo
   /usr/share/locale/es/LC_MESSAGES/meld.mo
@@ -151,6 +153,7 @@ Files included in the binary package:
   /usr/share/locale/ko/LC_MESSAGES/meld.mo
   /usr/share/locale/ne/LC_MESSAGES/meld.mo
   /usr/share/locale/nl/LC_MESSAGES/meld.mo
+  /usr/share/locale/oc/LC_MESSAGES/meld.mo
   /usr/share/locale/pa/LC_MESSAGES/meld.mo
   /usr/share/locale/pt/LC_MESSAGES/meld.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/meld.mo
@@ -196,11 +199,15 @@ Files included in the binary package:
   /usr/share/meld/glade2/vcview.glade
   /usr/share/omf/meld/meld-C.omf
   /usr/share/omf/meld/meld-es.omf
+  /usr/share/omf/meld/meld-fr.omf
   /usr/share/pixmaps/meld.png
 
 ------------------
 
 Port Notes:
+
+----- version 1.2-1 -----
+Version bump.
 
 ----- version 1.1.5.1-1 -----
 Version bump.
