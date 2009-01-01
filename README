@@ -5,23 +5,23 @@ between files or directories, as well as CVS and SVN.
 
 Runtime requirements:
   diffutils
-  python-2.5.2-1
-  python-gconf2-2.22.0-1
-  python-gnome2-2.22.0-1
-  python-gnomevfs2-2.22.0-1
-  python-gobject2-2.14.2-1
-  python-gtk2-2.12.1-1
-  python-gtksourceview-2.22.0-1
+  python-2.5.2-4
+  python-gconf2-2.22.3-1
+  python-gnome2-2.22.3-1
+  python-gnomevfs2-2.22.3-1
+  python-gobject2-2.15.4-1
+  python-gtk2-2.13.0-1
+  python-gtksourceview-2.24.0-1
   cvs  (optional)
   git  (optional)
   subversion  (optional)
 
 Build requirements:
-  cygport-0.3.11-1
-  intltool-0.37.1-1
+  cygport-0.4.3-1
+  intltool-0.40.5-1
   make-3.81-1
-  python-2.5.2-1
-  rarian-0.8.0-1
+  python-2.5.2-4
+  rarian-0.8.1-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -34,15 +34,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack meld-1.2-X-src.tar.bz2
+  unpack meld-1.2.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./meld-1.2-X.cygport all
+  cygport ./meld-1.2.1-X.cygport all
 
 This will create:
-  /usr/src/meld-1.2-X-src.tar.bz2
-  /usr/src/meld-1.2-X.tar.bz2
+  /usr/src/meld-1.2.1-X-src.tar.bz2
+  /usr/src/meld-1.2.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -123,17 +123,19 @@ Files included in the binary package:
   /usr/lib/meld/vcview.pyo
   /usr/share/application-registry/meld.applications
   /usr/share/applications/meld.desktop
-  /usr/share/doc/meld-1.2/AUTHORS
-  /usr/share/doc/meld-1.2/COPYING
-  /usr/share/doc/meld-1.2/ChangeLog
-  /usr/share/doc/meld-1.2/INSTALL
-  /usr/share/doc/meld-1.2/MAINTAINERS
+  /usr/share/doc/meld-1.2.1/AUTHORS
+  /usr/share/doc/meld-1.2.1/COPYING
+  /usr/share/doc/meld-1.2.1/ChangeLog
+  /usr/share/doc/meld-1.2.1/INSTALL
+  /usr/share/doc/meld-1.2.1/MAINTAINERS
   /usr/share/gnome/help/meld/C/figures/dirdiff.png
   /usr/share/gnome/help/meld/C/figures/filediff.png
   /usr/share/gnome/help/meld/C/meld.xml
   /usr/share/gnome/help/meld/es/figures/dirdiff.png
   /usr/share/gnome/help/meld/es/figures/filediff.png
   /usr/share/gnome/help/meld/es/meld.xml
+  /usr/share/gnome/help/meld/fr/figures/dirdiff.png
+  /usr/share/gnome/help/meld/fr/figures/filediff.png
   /usr/share/gnome/help/meld/fr/meld.xml
   /usr/share/locale/ar/LC_MESSAGES/meld.mo
   /usr/share/locale/bg/LC_MESSAGES/meld.mo
@@ -151,6 +153,7 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/meld.mo
   /usr/share/locale/ja/LC_MESSAGES/meld.mo
   /usr/share/locale/ko/LC_MESSAGES/meld.mo
+  /usr/share/locale/nb/LC_MESSAGES/meld.mo
   /usr/share/locale/ne/LC_MESSAGES/meld.mo
   /usr/share/locale/nl/LC_MESSAGES/meld.mo
   /usr/share/locale/oc/LC_MESSAGES/meld.mo
@@ -159,14 +162,18 @@ Files included in the binary package:
   /usr/share/locale/pt_BR/LC_MESSAGES/meld.mo
   /usr/share/locale/ru/LC_MESSAGES/meld.mo
   /usr/share/locale/rw/LC_MESSAGES/meld.mo
+  /usr/share/locale/sq/LC_MESSAGES/meld.mo
   /usr/share/locale/sr/LC_MESSAGES/meld.mo
   /usr/share/locale/sr@Latn/LC_MESSAGES/meld.mo
   /usr/share/locale/sv/LC_MESSAGES/meld.mo
   /usr/share/locale/vi/LC_MESSAGES/meld.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/meld.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/meld.mo
+  /usr/share/meld/glade2/dirdiff-ui.xml
   /usr/share/meld/glade2/dirdiff.glade
+  /usr/share/meld/glade2/filediff-ui.xml
   /usr/share/meld/glade2/filediff.glade
+  /usr/share/meld/glade2/meldapp-ui.xml
   /usr/share/meld/glade2/meldapp.glade
   /usr/share/meld/glade2/pixmaps/button_apply0.xpm
   /usr/share/meld/glade2/pixmaps/button_apply1.xpm
@@ -196,6 +203,7 @@ Files included in the binary package:
   /usr/share/meld/glade2/pixmaps/vc-icon.png
   /usr/share/meld/glade2/pixmaps/vc-remove-24.png
   /usr/share/meld/glade2/pixmaps/vc-update-24.png
+  /usr/share/meld/glade2/vcview-ui.xml
   /usr/share/meld/glade2/vcview.glade
   /usr/share/omf/meld/meld-C.omf
   /usr/share/omf/meld/meld-es.omf
@@ -205,6 +213,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.1-1 -----
+Version bump.
 
 ----- version 1.2-1 -----
 Version bump.
