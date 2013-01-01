@@ -1,5 +1,0 @@
-category: Devel Gnome
-requires: diffutils python python-gconf2 python-gobject python-gtk2.0 python-gtksourceview2
-sdesc: "GNOME diff tool for files, directories, and VCS"
-ldesc: "GNOME tool for analyzing two- and three-way diffs between files 
-or directories, as well as several version control systems."

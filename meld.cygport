@@ -1,0 +1,20 @@
+inherit gnome2 python
+
+NAME="meld"
+VERSION=1.7.0
+RELEASE=1
+CATEGORY="Devel Gnome"
+SUMMARY="GNOME diff tool for files, directories, and VCS"
+DESCRIPTION="GNOME tool for analyzing two- and three-way diffs between files
+or directories, as well as several version control systems."
+HOMEPAGE="http://meld.sourceforge.net/"
+REQUIRES="diffutils python-gtksourceview2"
+
+MAKEOPTS+=" prefix=/usr"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake -k -C po || true
+	cygmake
+}
