@@ -1,7 +1,7 @@
 inherit gnome2 python
 
 NAME="meld"
-VERSION=1.8.4
+VERSION=1.8.6
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNOME diff tool for files, directories, and VCS"
