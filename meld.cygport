@@ -1,7 +1,7 @@
-inherit gnome2 python
+inherit python2-distutils gnome.org
 
 NAME="meld"
-VERSION=1.8.6
+VERSION=3.16.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNOME diff tool for files, directories, and VCS"
@@ -10,13 +10,13 @@ or directories, as well as several version control systems."
 HOMEPAGE="http://meld.sourceforge.net/"
 
 ARCH=noarch
-REQUIRES="diffutils python-gtksourceview2"
 
-MAKEOPTS+=" prefix=/usr"
+REQUIRES="diffutils patch girepository-Gtk3.0 girepository-GtkSourceView3.0"
 
-src_compile() {
-	lndirs
+src_install() {
 	cd ${B}
-	cygmake -k -C po || true
-	cygmake
+	python2_distutils_install --no-update-icon-cache --no-compile-schemas
+
+	dodir /usr/share/icons
+	cp -a ${S}/data/icons/*/ ${D}/usr/share/icons/
 }
