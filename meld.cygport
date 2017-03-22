@@ -11,7 +11,7 @@ HOMEPAGE="http://meld.sourceforge.net/"
 
 ARCH=noarch
 
-REQUIRES="diffutils patch girepository-Gtk3.0 girepository-GtkSourceView3.0"
+REQUIRES="diffutils patch girepository-Gtk3.0 girepository-GtkSource3.0"
 
 src_install() {
 	cd ${B}
